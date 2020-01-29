@@ -64,9 +64,10 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          {/* © {new Date().getFullYear()}, Built with */}
+          <a href="http://github.com/yirichie" target='_blank' rel="noopener">github</a>
+          <span style={{ margin: `0 1em`}}>|</span>
+          <a href="https://www.linkedin.com/in/yirichie/" target='_blank' rel="noopener">linkedin</a>
         </footer>
       </div>
     )

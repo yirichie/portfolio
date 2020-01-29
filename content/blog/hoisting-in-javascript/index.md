@@ -56,7 +56,7 @@ declarations a value of <i>undefined</i>. In a sense, declarations are
 
 Feel free to try it out in the console yourself.
 
-Why undefined? It logs undefined because <i>var word</i> was initialized with a value of <i>undefined</i>.
+Why undefined? It logs undefined because <code class="language-text">var word</code> was initialized with a value of <i>undefined</i>.
 
 Think of it like this:
 
@@ -66,7 +66,7 @@ console.log(word);
 word = 'hello';
 ```
 
-Your code doesn't actually move, but <b>var word</b> is initialized with an undefined
+Your code doesn't actually move, but <code class="language-text">var word</code> is initialized with an undefined
 value so console.log(word) does not throw a ReferenceError. Instead, it logs
 <i>undefined</i> and then is assigned a value on line 3.
 
