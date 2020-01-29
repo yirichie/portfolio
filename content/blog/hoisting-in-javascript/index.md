@@ -1,6 +1,7 @@
 ---
 title: Hoisting in JavaScript
 date: "2020-01-28"
+description: What the heck is hoisting?
 ---
 
 To understand hoisting, I believe that it's important to understand what scope is first.
