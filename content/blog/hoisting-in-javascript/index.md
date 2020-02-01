@@ -13,7 +13,7 @@ Here's a simple function:
 
 ```javascript
 function add5(num) {
-    return num + 5;
+    return num + 5
 }
 
 add5(7) // 12
@@ -27,10 +27,10 @@ Let's add onto the function above.
 ```javascript
 function add5(num) {
     function get2() {
-        return 2;
+        return 2
     }
 
-    return get2() + num + 5;
+    return get2() + num + 5
 }
 
 add5(10) // 17
@@ -45,9 +45,9 @@ only locally within the scope of add5().
 Before continuing, what do you predict this will output?
 
 ```javascript
-console.log(word);
+console.log(word)
 
-var word = 'hello';
+var word = "hello"
 ```
 
 During the creation phase, the JavaScript interpreter will assign variable
@@ -61,9 +61,9 @@ Why undefined? It logs undefined because <code class="language-text">var word</c
 Think of it like this:
 
 ```javascript
-var word;
-console.log(word);
-word = 'hello';
+var word
+console.log(word)
+word = "hello"
 ```
 
 Your code doesn't actually move, but <code class="language-text">var word</code> is initialized with an undefined
@@ -76,7 +76,7 @@ Declarations are hoisted in JavaScript, so you are able to access the var withou
 
 ```javascript
 console.log(word)
-let word = 'hello';
+let word = "hello"
 // ReferenceError: Cannot access 'word' before initialization
 ```
 
