@@ -1,8 +1,10 @@
 ---
-title: How To Solve Fibonacci With Recursion
+title: Recursion Using JavaScript
 date: "2020-01-12"
-description: Fibonacci made easy
+description: Hey dawg, I heard you like recursion.. Hey dawg, I heard you like recursion..
 ---
+
+<h3>What is recursion?</h3>
 
 Simply put, recursion is a function that calls itself.
 
