@@ -54,7 +54,7 @@ const Bio = () => {
                 }}
             />
             <p>
-                Written by <strong>{author}</strong>.
+                Personal blog by <strong>{author}</strong>.
                 <br />
                 Here to learn and build cool things.
             </p>

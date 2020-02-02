@@ -1,44 +1,10 @@
 ---
 title: Hoisting in JavaScript
-date: "2020-01-28"
+date: "2019-09-02"
 description: Up, up, and away!
 ---
 
-To understand hoisting, I believe that it's important to understand what scope is first.
-
-<h3>What is scope?</h3>
-
-<i>Scope</i> defines where variables and functions are accessible inside your program.
-Here's a simple function:
-
-```javascript
-function add5(num) {
-    return num + 5
-}
-
-add5(7) // 12
-```
-
-The function add5() is available on the global scope because it is not nested
-within another expression.
-
-Let's add onto the function above.
-
-```javascript
-function add5(num) {
-    function get2() {
-        return 2
-    }
-
-    return get2() + num + 5
-}
-
-add5(10) // 17
-```
-
-Here the function get2() is only available within the function add5()
-and is local scoped. It is <i>locally</i> scoped because get2() is available
-only locally within the scope of add5().
+If you don't quite yet understand scope, be sure to check out <a href="/blog/scope-in-javascript">this</a> blog post first.
 
 <h3>What is hoisting?</h3>
 
