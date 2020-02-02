@@ -77,7 +77,9 @@ fibonacci(5) essentially returns fibonacci(4) + fibonacci(3), which in turns cal
 
 If you still haven't quite wrapped your head around it, check out the visualization created by Stephen Grider below.
 
-<img src="./recursion-tree.png" />
+<img src="./recursion-tree.png" /><br>
+
+If you're still having trouble, check out <a href="https://stackoverflow.com/a/8845269" target="_blank" rel="noopener noreferrer">this</a> explanation on Stack Overflow.
 
 <h3>Conclusion</h3>
 
