@@ -76,21 +76,14 @@ class Layout extends React.Component {
                     }}
                 >
                     {header}
-                    <Link
-                        style={{
-                            boxShadow: `none`,
-                            textDecoration: `none`,
-                            color: `inherit`,
-                        }}
-                        to="/projects"
-                    >
-                      Projects
-                    </Link>
+                    <div />
                 </header>
                 <main>{children}</main>
                 <footer>
                     {/* © {new Date().getFullYear()}, Built with */}
-                    <a href="/">home</a>
+                    <Link to="/">home</Link>
+                    <span style={{ margin: `0 1em` }}>|</span>
+                    <Link to="/projects">projects</Link>
                     <span style={{ margin: `0 1em` }}>|</span>
                     <a
                         href="http://github.com/yirichie"
