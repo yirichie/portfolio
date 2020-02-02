@@ -10,12 +10,16 @@ class Layout extends React.Component {
         const blogPath = `${__PATH_PREFIX__}/blog`
         let header
 
-        if (location.pathname === rootPath || location.pathname === blogPath) {
+        // if (location.pathname === rootPath || location.pathname === blogPath) {
+        if (true) {
             header = (
-                <h1
+                // <h1
+                <h3
                     style={{
                         ...scale(1),
-                        marginBottom: rhythm(1.5),
+                        fontFamily: `Montserrat, sans-serif`,
+                        // marginBottom: rhythm(1.5),
+                        marginBottom: 0,
                         marginTop: 0,
                     }}
                 >
@@ -29,13 +33,15 @@ class Layout extends React.Component {
                     >
                         {title}
                     </Link>
-                </h1>
+                    {/* </h1> */}
+                </h3>
             )
         } else {
             header = (
                 <h3
                     style={{
                         fontFamily: `Montserrat, sans-serif`,
+                        marginBottom: 0,
                         marginTop: 0,
                     }}
                 >
@@ -61,18 +67,35 @@ class Layout extends React.Component {
                     padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
                 }}
             >
-                <header>{header}</header>
+                <header
+                    style={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        marginBottom: rhythm(1.5),
+                    }}
+                >
+                    {header}
+                    <Link
+                        style={{
+                            boxShadow: `none`,
+                            textDecoration: `none`,
+                            color: `inherit`,
+                        }}
+                        to="/projects"
+                    >
+                      Projects
+                    </Link>
+                </header>
                 <main>{children}</main>
                 <footer>
                     {/* © {new Date().getFullYear()}, Built with */}
-                    <a href="/">
-                        home
-                    </a>
+                    <a href="/">home</a>
                     <span style={{ margin: `0 1em` }}>|</span>
                     <a
                         href="http://github.com/yirichie"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         github
                     </a>
@@ -80,7 +103,7 @@ class Layout extends React.Component {
                     <a
                         href="https://www.linkedin.com/in/yirichie/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                     >
                         linkedin
                     </a>
