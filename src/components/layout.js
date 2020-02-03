@@ -1,9 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
+import Toggle from "./toggle"
 
 import { rhythm, scale } from "../utils/typography"
 
 class Layout extends React.Component {
+    componentDidMount() {
+        const currentClass = document.body.classList.value
+        if (!currentClass) {
+            document.body.classList.add("light")
+        }
+    }
+
+    handleToggle = () => {
+        const currentClass = document.body.classList.value
+        const newClass = currentClass === "light" ? "dark" : "light"
+        document.body.classList.remove(currentClass)
+        document.body.classList.add(newClass)
+    }
+
     render() {
         const { location, title, children } = this.props
         const rootPath = `${__PATH_PREFIX__}/`
@@ -76,7 +91,7 @@ class Layout extends React.Component {
                     }}
                 >
                     {header}
-                    <div />
+                    <Toggle onClick={this.handleToggle} />
                 </header>
                 <main>{children}</main>
                 <footer>
