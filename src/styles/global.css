@@ -1,25 +1,23 @@
 body.light {
     color: black;
     background: white;
-    transition: color 200ms linear;
-    transition: background 200ms linear;
+    transition: color 0.2s ease-out, background 0.2s ease-out;
 }
 
 body.dark {
     color: #f2f2f2;
     background: #282c35;
-    transition: color 200ms linear;
-    transition: background 200ms linear;
+    transition: color 0.2s ease-out, background 0.2s ease-out;
 }
 
 body.light a {
     /* color: #d23669; */
-    transition: color 200ms linear;
+    transition: color 0.2 ease-out;
 }
 
 body.dark a {
     color: #69c0fb;
-    transition: color 200ms linear;
+    transition: color 0.2 ease-out;
 }
 
 /* a { */

@@ -1,7 +1,7 @@
 ---
 title: undefined vs null
 date: "2019-05-20"
-description: The subtle difference between the two
+description: The subtle differences between the two
 ---
 
 By now, you've undoubtedly run across both <code>undefined</code> and <code>null</code> and wondered what the differences between them are.
