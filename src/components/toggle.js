@@ -9,7 +9,7 @@ const Toggle = props => {
             }}
             onClick={props.onClick}
         >
-            🌛
+            🎉
         </button>
     )
 }
