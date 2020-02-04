@@ -13,12 +13,12 @@ body.dark {
 }
 
 body.light a {
-    color: #d23669;
+    /* color: #d23669; */
     transition: color 200ms linear;
 }
 
 body.dark a {
-    color: #ffa7c4;
+    color: #69c0fb;
     transition: color 200ms linear;
 }
 
