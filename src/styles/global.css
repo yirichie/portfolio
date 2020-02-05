@@ -20,6 +20,11 @@ body.dark a {
     transition: color 0.2 ease-out;
 }
 
+body.dark blockquote {
+    color: white;
+    transition: color 0.2 ease-out;
+}
+
 /* a { */
     /* color: #ffa7c4; */
     /* color: #DEF3FD; */
