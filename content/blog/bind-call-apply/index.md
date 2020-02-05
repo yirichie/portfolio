@@ -1,6 +1,6 @@
 ---
 title: Understanding bind(), call(), and apply()
-date: "2019-08-25"
+date: "2019-09-25"
 description: Some useful methods to add to your toolkit
 ---
 

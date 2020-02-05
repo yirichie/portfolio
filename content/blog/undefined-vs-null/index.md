@@ -1,6 +1,6 @@
 ---
 title: undefined vs null
-date: "2019-05-20"
+date: "2019-05-24"
 description: The subtle differences between the two
 ---
 
