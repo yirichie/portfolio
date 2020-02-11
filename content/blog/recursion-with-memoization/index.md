@@ -42,7 +42,7 @@ You can see with fibonacci(5) that fibonacci(3) gets called 2 times while fibona
 Here is a solution with memoization implemented.
 
 ```javascript
-fibonacci(num, memo) {
+function fibonacci(num, memo) {
     // Check for a memoized object being passed in/down
     // or create a new one
     memo = memo || {};
