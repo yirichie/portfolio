@@ -67,7 +67,7 @@ count(); // 2
 count(); // 3
 ```
 
-Here, we have a function counter() and an closure that returns the variable counter + 1. It has access to variable 'counter' through <i>lexical scope</i>. We set function counter() to the variable 'count' and call it a couple times - notice that it returns the incremented 'counter' each time. JavaScript doesn't formally have private variables, but in a sense we've created one.
+Here, we have a function counter() and a closure that returns the variable counter + 1. It has access to variable 'counter' through <i>lexical scope</i>. We set function counter() to the variable 'count' and call it a couple times - notice that it returns the incremented 'counter' each time. JavaScript doesn't formally have private variables, but in a sense we've created one.
 
 <h3>Conclusion</h3>
 

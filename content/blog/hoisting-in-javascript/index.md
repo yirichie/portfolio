@@ -39,7 +39,7 @@ Declarations are hoisted in JavaScript, so you are able to access the var withou
 ```javascript
 // Function declaration
 console.log(foo); // Function: foo()
-foo(); // speaking
+foo(); // FOO
 function foo() {
     console.log('FOO');
 };

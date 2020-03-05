@@ -101,6 +101,7 @@ const newRichie = { ...richie, ...newAge };
 console.log(newRichie);
 // { name: 'richie', age: 28 }
 ```
+Do note that the latter object will overwrite any properties you also have in the first one.
 
 <h3>Conclusion</h3>
 

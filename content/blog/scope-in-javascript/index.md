@@ -23,7 +23,7 @@ greeting(); // Hello my name is Richie
 
 In this example, <code>name</code> is defined in the <b>global scope</b> because it is declared outside of a function. "name" is a global variable so you can access it anywhere and as seen in the example, within the function greeting().
 
-Although it's commonly not recommended, if you absolutely must use a global variable then they are typically declared with CAPITAL letters like so.
+Although it's commonly not recommended, if you absolutely must use a global variable then they are typically declared with capital letters like so.
 
 ```javascript
 const GLOBAL_NAME = 'Richie';
