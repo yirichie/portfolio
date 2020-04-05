@@ -1,6 +1,6 @@
 ---
 title: JavaScript 3 Dots
-date: "2019-11-22"
+date: "2020-03-04"
 description: Rest parameters and spread syntax
 ---
 

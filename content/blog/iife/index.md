@@ -1,6 +1,6 @@
 ---
 title: Immediately Invoked Function Expressions
-date: "2019-08-28"
+date: "2020-02-19"
 description: Or IIFE for short
 ---
 

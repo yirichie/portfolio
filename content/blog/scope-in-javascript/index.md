@@ -1,6 +1,6 @@
 ---
 title: Scope in JavaScript
-date: "2019-08-20"
+date: "2020-02-04"
 description: Showdown between global vs local scope
 ---
 

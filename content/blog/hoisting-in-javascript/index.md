@@ -1,6 +1,6 @@
 ---
 title: Hoisting in JavaScript
-date: "2019-09-02"
+date: "2020-02-25"
 description: Up, up, and away!
 ---
 

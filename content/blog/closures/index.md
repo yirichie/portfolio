@@ -1,6 +1,6 @@
 ---
 title: Closures in JavaScript
-date: "2019-08-25"
+date: "2020-02-11"
 description: Controlling side effects and private variables
 ---
 

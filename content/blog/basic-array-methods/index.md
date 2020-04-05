@@ -1,6 +1,6 @@
 ---
 title: Basic Array Methods
-date: "2019-02-11"
+date: "2020-01-08"
 description: A few simple Array methods you should know
 ---
 

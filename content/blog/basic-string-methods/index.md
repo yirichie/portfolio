@@ -1,6 +1,6 @@
 ---
 title: Basic String Methods
-date: "2019-02-05"
+date: "2020-01-05"
 description: A few simple String methods you should know
 ---
 
