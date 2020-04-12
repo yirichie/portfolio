@@ -35,7 +35,7 @@ This one is very straightforward - we'll want to start off by sorting the list o
  * @param {number[]} stones
  * @return {number}
  */
-var lastStoneWeight = function(stones) {
+const lastStoneWeight = stones => {
     let sorted = stones.sort((a, b) => b - a);
     // ...
 }
@@ -44,7 +44,7 @@ var lastStoneWeight = function(stones) {
 Sorting in a descending order allows us to target the first and second element since we know they'll always be the greatest.
 
 ```javascript
-var lastStoneWeight = function(stones) {
+const lastStoneWeight = stones => {
     let sorted = stones.sort((a, b) => b - a);
 
     while (sorted.length > 1) {
@@ -59,7 +59,7 @@ We know that ultimately, we want to return 0 if no elements remain in the list o
 We also know that we want to use a <code>while loop</code> so that we can continue iterating over the array until 0 or 1 remain.
 
 ```javascript
-var lastStoneWeight = function(stones) {
+const lastStoneWeight = stones => {
     let sorted = stones.sort((a, b) => b - a);
     
     while (sorted.length > 1) {
