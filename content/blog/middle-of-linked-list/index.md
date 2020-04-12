@@ -1,8 +1,10 @@
 ---
 title: Middle of the Linked List
 date: "2020-04-04"
-description: How to find the middle node of a linked list
+description: LeetCode problem
 ---
+
+<a href="https://leetcode.com/problems/middle-of-the-linked-list/" target="_blank">Link to LeetCode problem</a>
 
 <blockquote>
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.
@@ -11,12 +13,14 @@ If there are two middle nodes, return the second middle node.
 </blockquote>
 
 ```javascript
-// Input: [1,2,3,4,5] => 3
-// 3 is the middle node
+/*
+Input: [1,2,3,4,5] => 3
+3 is the middle node
 
-// Input: [1,2,3,4,5,6] => 4
-// 4 because if there are 2 middle nodes,
-// we return the second middle node
+Input: [1,2,3,4,5,6] => 4
+4 because if there are 2 middle nodes,
+we return the second middle node
+*/
 ```
 
 So with a singly linked list, each node has a reference to the next node, but we must begin at the head.
