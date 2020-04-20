@@ -24,12 +24,12 @@ Note: Some solutions may start with Fibonacci numbers "1, 1", but we're going to
 
 ```javascript
 function fibonacci(num) {
-    // Base case
-    if (num < 2) return num;
+  // Base case
+  if (num < 2) return num;
 }
 
-fibonacci(0) // 0
-fibonacci(1) // 1
+fibonacci(0); // 0
+fibonacci(1); // 1
 ```
 
 We start off with the simple base cases to cover the first two numbers (including 0th). If you try this out as is, it would cover up to fibonacci(1).
@@ -38,24 +38,24 @@ Let's cover the rest.
 
 ```javascript
 function fibonacci(num) {
-    if (num < 2) return num;
+  if (num < 2) return num;
 
-    return fibonacci(num - 1) + fibonacci(num - 2)
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(5) // 5
+fibonacci(5); // 5
 ```
 
 At first glance, this may make your head spin but that's all right. We can break this down.
 
 ```javascript
 function fibonacci(num) {
-    if (num < 2) return num;
+  if (num < 2) return num;
 
-    return fibonacci(num - 1) + fibonacci(num - 2)
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(5) // 5
+fibonacci(5); // 5
 
 // fibonacci(5) => fibonacci(4) + fibonacci(3)
 

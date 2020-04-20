@@ -10,11 +10,11 @@ When you create a function within another function, the inner function is the cl
 
 ```javascript
 function outer() {
-    const name = 'Richie';
+  const name = "Richie";
 
-    return function inner() {
-        console.log(name);
-    }
+  return function inner() {
+    console.log(name);
+  };
 }
 
 outer()(); // Richie
@@ -28,7 +28,7 @@ Closures are typically used to control side effects and to create private variab
 
 ```javascript
 function makeTacos(numberOfTacos) {
-    setTimeout(() => console.log(`Made ${numberOfTacos} tacos!`), 1000);
+  setTimeout(() => console.log(`Made ${numberOfTacos} tacos!`), 1000);
 }
 
 makeTacos(20); // Made 20 tacos!
@@ -38,9 +38,9 @@ Here, we have a function makeTacos() that takes an argument of the number of tac
 
 ```javascript
 function prepTacos(numOfTacos) {
-    return function() {
-        setTimeout(() => console.log(`Made ${numOfTacos} tacos!`), 1000);
-    }
+  return function() {
+    setTimeout(() => console.log(`Made ${numOfTacos} tacos!`), 1000);
+  };
 }
 
 const makeFiftyTacosLater = prepTacos(50);
@@ -54,10 +54,10 @@ Now we have a function called prepTacos() that also takes a number of tacos, but
 
 ```javascript
 function counter() {
-    let counter = 0;
-    return function() {
-        return counter++;
-    }
+  let counter = 0;
+  return function() {
+    return counter++;
+  };
 }
 
 const count = counter();

@@ -15,7 +15,7 @@ Undefined typically refers to the lack of a value assignment.
 ```javascript
 let word;
 word === undefined; // true
-typeof word // "undefined"
+typeof word; // "undefined"
 word === null; // false
 
 let word2 = undefined; // This also works, but you shouldn't do it
@@ -31,7 +31,7 @@ On the other hand, null refers to an intentional assignment of a non-existent va
 let word = null;
 word === null; // true
 word === false; // false
-typeof word // "object"
+typeof word; // "object"
 ```
 
 A variable with a value of null has intentionally been declared with a value of null.

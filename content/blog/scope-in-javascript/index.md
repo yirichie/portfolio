@@ -13,10 +13,10 @@ description: Showdown between global vs local scope
 If a variable is declared outside of a function or curly braces, it is defined in the <b>global scope</b>.
 
 ```javascript
-const name = 'Richie';
+const name = "Richie";
 
 function greeting() {
-    console.log(`Hello my name is ${name}`);
+  console.log(`Hello my name is ${name}`);
 }
 greeting(); // Hello my name is Richie
 ```
@@ -26,7 +26,7 @@ In this example, <code>name</code> is defined in the <b>global scope</b> because
 Although it's commonly not recommended, if you absolutely must use a global variable then they are typically declared with capital letters like so.
 
 ```javascript
-const GLOBAL_NAME = 'Richie';
+const GLOBAL_NAME = "Richie";
 ```
 
 <h3>Local Scope</h3>
@@ -39,8 +39,8 @@ When you declare a variable within a function, it is available only within the f
 
 ```javascript
 function greeting() {
-    const name = 'Richie';
-    console.log(name);
+  const name = "Richie";
+  console.log(name);
 }
 greeting(); // Richie
 console.log(name); // ReferenceError: name is not defined
@@ -54,13 +54,13 @@ Block scope refers to variables declared within a block (if/else blocks, switch 
 
 ```javascript
 function fruits() {
-    if (true) {
-        var fruit1 = 'apple';
-        let fruit2 = 'banana';
-    }
+  if (true) {
+    var fruit1 = "apple";
+    let fruit2 = "banana";
+  }
 
-    console.log(fruit1);
-    console.log(fruit2);
+  console.log(fruit1);
+  console.log(fruit2);
 }
 
 fruits();
@@ -68,13 +68,13 @@ fruits();
 // ReferenceError: fruit2 is not defined
 
 function veggies() {
-    if (true) {
-        var veg1 = 'carrot';
-        const veg2 = 'tomato';
-    }
+  if (true) {
+    var veg1 = "carrot";
+    const veg2 = "tomato";
+  }
 
-    console.log(veg1);
-    console.log(veg2);
+  console.log(veg1);
+  console.log(veg2);
 }
 
 veggies();
@@ -90,14 +90,14 @@ When a function is defined within another function, the inner function's ability
 
 ```javascript
 function outer() {
-    const name = 'Richie';
-    function inner() {
-        const age = 24;
-        console.log(`Hi my name is ${name} and I am ${age}`);
-    }
-    
-    inner();
-    console.log(age);
+  const name = "Richie";
+  function inner() {
+    const age = 24;
+    console.log(`Hi my name is ${name} and I am ${age}`);
+  }
+
+  inner();
+  console.log(age);
 }
 outer();
 // Hi my name is Richie and I am 24

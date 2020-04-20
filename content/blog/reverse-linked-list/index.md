@@ -35,7 +35,7 @@ For this problem, we'll keep track of "head", "next", and "previous".
  * @return {ListNode}
  */
 const reverseList = head => {
-    // ...
+  // ...
 };
 ```
 
@@ -44,13 +44,13 @@ We take in this argument and should return some other ListNode.
 
 ```javascript
 const reverseList = head => {
-    let previous = null
-    
-    while (head) {
-        // ...
-    }
-    
-    return previous;
+  let previous = null;
+
+  while (head) {
+    // ...
+  }
+
+  return previous;
 };
 ```
 
@@ -61,16 +61,16 @@ With all of this in mind, try your own solution and scroll down to see if we cam
 
 ```javascript
 const reverseList = head => {
-    let previous = null;
-    
-    while (head) {
-        const next = head.next
-        head.next = previous;
-        previous = head
-        head = next
-    }
-    
-    return previous;
+  let previous = null;
+
+  while (head) {
+    const next = head.next;
+    head.next = previous;
+    previous = head;
+    head = next;
+  }
+
+  return previous;
 };
 ```
 

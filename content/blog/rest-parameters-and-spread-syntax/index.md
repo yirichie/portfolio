@@ -12,7 +12,7 @@ A function can be called with any number of arguments as seen here.
 
 ```javascript
 function sum(a, b) {
-    return a + b;
+  return a + b;
 }
 
 sum(1, 2, 3, 4, 5); // 3
@@ -24,15 +24,15 @@ Rest parameters allow you to access the <b>rest of the parameters</b> by gatheri
 
 ```javascript
 function sum(...rest) {
-    console.log(rest);
+  console.log(rest);
 
-    let sum = 0;
+  let sum = 0;
 
-    for (let i = 0; i < rest.length; i++) {
-        sum += rest[i];
-    }
+  for (let i = 0; i < rest.length; i++) {
+    sum += rest[i];
+  }
 
-    return sum;
+  return sum;
 }
 
 sum(1, 2, 3, 4, 5);
@@ -45,11 +45,11 @@ No other parameters were defined in the function above so all arguments passed i
 
 ```javascript
 function description(firstName, lastName, ...rest) {
-    const fruits = rest.join(', ');
-    console.log(`${firstName} ${lastName} likes ${fruits}.`);
+  const fruits = rest.join(", ");
+  console.log(`${firstName} ${lastName} likes ${fruits}.`);
 }
 
-description('richie', 'yi', 'apples', 'bananas', 'strawberries');
+description("richie", "yi", "apples", "bananas", "strawberries");
 // "richie yi likes apples, bananas, strawberries."
 ```
 
@@ -65,10 +65,10 @@ The spread syntax looks similar to rest parameters, but allows you to expand ele
 
 ```javascript
 function sumOfThree(first, second, third) {
-    console.log(first);
-    console.log(second);
-    console.log(third);
-    return first + second + third;
+  console.log(first);
+  console.log(second);
+  console.log(third);
+  return first + second + third;
 }
 
 sumOfThree(...[5, 6, 7]);
@@ -93,7 +93,7 @@ console.log([...arr1, 20, 25, ...arr2]);
 You can also merge objects.
 
 ```javascript
-const richie = { name: 'richie', age: 25 };
+const richie = { name: "richie", age: 25 };
 const newAge = { age: 28 };
 
 const newRichie = { ...richie, ...newAge };
@@ -101,6 +101,7 @@ const newRichie = { ...richie, ...newAge };
 console.log(newRichie);
 // { name: 'richie', age: 28 }
 ```
+
 Do note that the latter object will overwrite any properties you also have in the first one.
 
 <h3>Conclusion</h3>

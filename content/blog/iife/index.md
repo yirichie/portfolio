@@ -9,7 +9,7 @@ description: Or IIFE for short
 ```javascript
 // Function declaration
 function greeting() {
-    console.log('Hello world')
+  console.log("Hello world");
 }
 ```
 
@@ -17,8 +17,8 @@ A function declaration defines a function with a name and the specified paramete
 
 ```javascript
 const greeting = function() {
-    console.log('Hello world');
-}
+  console.log("Hello world");
+};
 ```
 
 A function expression defines a function <i>without a name</i> (creating an anonymous function) and is assigned to a variable.
@@ -33,13 +33,13 @@ An IIFE is similar to a regular function expression in that it is typically an a
 
 ```javascript
 (function() {
-    console.log('Hello world')
+  console.log("Hello world");
 })();
 // Hello world
 
 (function() {
-    console.log('Hello world')
-}());
+  console.log("Hello world");
+})();
 // Hello world
 ```
 
@@ -53,9 +53,9 @@ IIFE's are typically used for data privacy.
 
 ```javascript
 (function() {
-    var superSecretApiKey = 'alPastorTacos';
+  var superSecretApiKey = "alPastorTacos";
 
-    // do something with superSecretApiKey
+  // do something with superSecretApiKey
 })();
 
 console.log(superSecretApiKey);
@@ -68,10 +68,10 @@ You technically could create a regular function expression and achieve the same 
 
 ```javascript
 function useApiKey() {
-    var superSecretApiKey = 'alPastorTacos';
+  var superSecretApiKey = "alPastorTacos";
 
-    // do something with superSecretApiKey
-};
+  // do something with superSecretApiKey
+}
 
 useApiKey();
 
@@ -91,7 +91,7 @@ On a side note, IIFE's can also take arguments.
 var num = 50;
 
 (function(number) {
-    console.log(`${number} tacos`)
+  console.log(`${number} tacos`);
 })(num);
 // 50 tacos
 ```

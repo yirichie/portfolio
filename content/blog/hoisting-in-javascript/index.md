@@ -41,14 +41,14 @@ Declarations are hoisted in JavaScript, so you are able to access the var withou
 console.log(foo); // Function: foo()
 foo(); // FOO
 function foo() {
-    console.log('FOO');
-};
+  console.log("FOO");
+}
 
 // Function expression
 console.log(bar); // undefined
 bar(); // Uncaught TypeError: bar is not a function
 var bar = function() {
-    console.log('BAR');
+  console.log("BAR");
 };
 ```
 

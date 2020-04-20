@@ -30,15 +30,15 @@ Let's start with a few of the simple things.
 ```javascript
 const findPermutations = str => {
   // track each permutation in an array
-  const arr = []
+  const arr = [];
 
   // iterate over each letter of str input
   for (let i = 0; i < str.length; i++) {
     // ...
   }
 
-  return arr
-}
+  return arr;
+};
 ```
 
 We start with an array to keep track of all the permutations, iterate over each character in the str input, and return the arr. Now let's handle any edge cases and beginning setting up for the recursion.
@@ -47,22 +47,22 @@ We start with an array to keep track of all the permutations, iterate over each 
 const findPermutations = str => {
   // handles edge-case of str of length 1
   if (str.length === 1) {
-    return str
+    return str;
   }
 
-  const arr = []
+  const arr = [];
 
   for (let i = 0; i < str.length; i++) {
     // track current char
-    const currentChar = str[i]
+    const currentChar = str[i];
     // track remaining chars
-    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length)
+    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length);
 
     // handle recursion
   }
 
-  return arr
-}
+  return arr;
+};
 ```
 
 Previously, we know from the recursion tree that we'll want to keep track of the current character and find all permutations of the remaining characters. Now we're set up for it. Lastly we just need to handle the recursion.
@@ -70,24 +70,24 @@ Previously, we know from the recursion tree that we'll want to keep track of the
 ```javascript
 const findPermutations = str => {
   if (str.length === 1) {
-    return str
+    return str;
   }
 
-  const arr = []
+  const arr = [];
 
   for (let i = 0; i < str.length; i++) {
-    const currentChar = str[i]
-    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length)
+    const currentChar = str[i];
+    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length);
 
     for (let permutation of findPermutations(remainingChars)) {
-      arr.push(currentChar + permutation)
+      arr.push(currentChar + permutation);
     }
   }
 
-  return arr
-}
+  return arr;
+};
 
-findPermutations("abc")
+findPermutations("abc");
 // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
 ```
 
@@ -102,7 +102,7 @@ with the same pattern.
 One thing you might notice, however, is that we'll end up with some extra permutations if we have a duplicate char.
 
 ```javascript
-findPermutations("aabc")
+findPermutations("aabc");
 /* [
   'aabc', 'aacb', 'abac',
   'abca', 'acab', 'acba',
@@ -120,24 +120,24 @@ Let's fix this.
 ```javascript
 const findPermutations = str => {
   if (str.length === 1) {
-    return str
+    return str;
   }
 
-  const arr = []
+  const arr = [];
 
   for (let i = 0; i < str.length; i++) {
-    const currentChar = str[i]
-    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length)
+    const currentChar = str[i];
+    const remainingChars = str.slice(0, i) + str.slice(i + 1, str.length);
 
-    if (str.indexOf(currentChar) !== i) continue
+    if (str.indexOf(currentChar) !== i) continue;
 
     for (let permutation of findPermutations(remainingChars)) {
-      arr.push(currentChar + permutation)
+      arr.push(currentChar + permutation);
     }
   }
 
-  return arr
-}
+  return arr;
+};
 ```
 
 The new line let's us skip over the current character if it's not the first element in the string,

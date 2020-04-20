@@ -12,12 +12,12 @@ Let's review the recursive Fibonacci solution.
 
 ```javascript
 function fibonacci(num) {
-    if (num < 2) return num;
+  if (num < 2) return num;
 
-    return fibonacci(num - 1) + fibonacci(num - 2)
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
 
-fibonacci(5) // 5
+fibonacci(5); // 5
 
 // fibonacci(5) => fibonacci(4) + fibonacci(3)
 
@@ -43,19 +43,19 @@ Here is a solution with memoization implemented.
 
 ```javascript
 function fibonacci(num, memo) {
-    // Check for a memoized object being passed in/down
-    // or create a new one
-    memo = memo || {};
+  // Check for a memoized object being passed in/down
+  // or create a new one
+  memo = memo || {};
 
-    // If a cached result exists, return it
-    if (memo[num]) return memo[num];
+  // If a cached result exists, return it
+  if (memo[num]) return memo[num];
 
-    // Or return the base case
-    if (num < 2) return num;
+  // Or return the base case
+  if (num < 2) return num;
 
-    // Otherwise, continue the recursion and set the cached result
-    // when you hit a base case
-    return memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo);
+  // Otherwise, continue the recursion and set the cached result
+  // when you hit a base case
+  return (memo[num] = fibonacci(num - 1, memo) + fibonacci(num - 2, memo));
 }
 ```
 

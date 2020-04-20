@@ -9,7 +9,7 @@ description: A few simple String methods you should know
 Returns the length of the string.
 
 ```javascript
-const str = 'hello world';
+const str = "hello world";
 console.log(str.length());
 // 11
 ```
@@ -19,8 +19,8 @@ console.log(str.length());
 Determines if string contains a substring.
 
 ```javascript
-const str = 'hello world';
-console.log(str.includes('hello'));
+const str = "hello world";
+console.log(str.includes("hello"));
 // true
 ```
 
@@ -29,11 +29,11 @@ console.log(str.includes('hello'));
 Returns index of a substring. -1 if substring does not exist in string.
 
 ```javascript
-const str = 'hello world';
-console.log(str.indexOf('world'));
+const str = "hello world";
+console.log(str.indexOf("world"));
 // 6
 
-console.log(str.indexOf('test'));
+console.log(str.indexOf("test"));
 // -1
 ```
 
@@ -42,7 +42,7 @@ console.log(str.indexOf('test'));
 Returns a string with all lowercase letters.
 
 ```javascript
-const str = 'Hello World';
+const str = "Hello World";
 console.log(str.toLowerCase());
 // 'hello world'
 ```
@@ -52,7 +52,7 @@ console.log(str.toLowerCase());
 Returns a string with all uppercase letters.
 
 ```javascript
-const str = 'hello world';
+const str = "hello world";
 console.log(str.toUpperCase());
 // 'HELLO WORLD'
 ```
@@ -64,7 +64,7 @@ Returns a section of a string.
 Takes beginning index as first parameter and optional ending index as second. Will slice to the end of second parameter is not passed in.
 
 ```javascript
-const str = 'hello world';
+const str = "hello world";
 console.log(str.slice(6));
 // 'world'
 ```
@@ -72,8 +72,8 @@ console.log(str.slice(6));
 Can be combined with .indexOf() to use as a reference point for beginning index.
 
 ```javascript
-const str = 'al pastor tacos';
-console.log(str.slice(str.indexOf('pastor')));
+const str = "al pastor tacos";
+console.log(str.slice(str.indexOf("pastor")));
 // 'pastor tacos'
 ```
 
@@ -94,7 +94,7 @@ console.log(str.split(' ');
 Returns the character at a given index.
 
 ```javascript
-const str = 'al pastor tacos';
+const str = "al pastor tacos";
 console.log(str.charAt(4));
 // 'a'
 ```

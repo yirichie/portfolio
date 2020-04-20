@@ -18,11 +18,11 @@ Let's start by creating a function that checks if a number is prime.
 
 ```javascript
 function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) return false;
-    }
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
 
-    return true;
+  return true;
 }
 
 // isPrime(4) => false
@@ -40,21 +40,21 @@ Now let's check for the sum of primes.
 
 ```javascript
 function isPrime(num) {
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) return false;
-    }
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
 
-    return true;
+  return true;
 }
 
 function sumOfPrimes(num) {
-    const nums = [];
+  const nums = [];
 
-    for (let i = 2; i <= num; i++) {
-        if (isPrime(i)) nums.push(i)
-    }
+  for (let i = 2; i <= num; i++) {
+    if (isPrime(i)) nums.push(i);
+  }
 
-    return nums.reduce((accum, curr) => accum + curr)
+  return nums.reduce((accum, curr) => accum + curr);
 }
 
 //  sumOfPrimes(5) => 2 + 3 + 5 => 10;
