@@ -9,7 +9,9 @@ const Toggle = props => {
       }}
       onClick={props.onClick}
     >
-      🎉
+      <span role="img" aria-label="toggle dark mode">
+        🎉
+      </span>
     </button>
   );
 };
