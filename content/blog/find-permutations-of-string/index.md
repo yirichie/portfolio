@@ -28,7 +28,7 @@ Looking at this pattern, we know we'll need to iterate through each letter of th
 Let's start with a few of the simple things.
 
 ```javascript
-const findPermutations = str => {
+const findPermutations = (str) => {
   // track each permutation in an array
   const arr = [];
 
@@ -44,7 +44,7 @@ const findPermutations = str => {
 We start with an array to keep track of all the permutations, iterate over each character in the str input, and return the arr. Now let's handle any edge cases and beginning setting up for the recursion.
 
 ```javascript
-const findPermutations = str => {
+const findPermutations = (str) => {
   // handles edge-case of str of length 1
   if (str.length === 1) {
     return str;
@@ -68,7 +68,7 @@ const findPermutations = str => {
 Previously, we know from the recursion tree that we'll want to keep track of the current character and find all permutations of the remaining characters. Now we're set up for it. Lastly we just need to handle the recursion.
 
 ```javascript
-const findPermutations = str => {
+const findPermutations = (str) => {
   if (str.length === 1) {
     return str;
   }
@@ -118,7 +118,7 @@ findPermutations("aabc");
 Let's fix this.
 
 ```javascript
-const findPermutations = str => {
+const findPermutations = (str) => {
   if (str.length === 1) {
     return str;
   }

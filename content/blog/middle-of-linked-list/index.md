@@ -38,7 +38,7 @@ And so, we need to keep track of both.
  * }
  */
 
-const middleNode = head => {
+const middleNode = (head) => {
   let fast = head;
   let slow = head;
 

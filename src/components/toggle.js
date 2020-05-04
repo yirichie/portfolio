@@ -1,6 +1,6 @@
 import React from "react";
 
-const Toggle = props => {
+const Toggle = (props) => {
   return (
     <button
       style={{

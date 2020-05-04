@@ -34,7 +34,7 @@ For this problem, we'll keep track of "head", "next", and "previous".
  * @param {ListNode} head
  * @return {ListNode}
  */
-const reverseList = head => {
+const reverseList = (head) => {
   // ...
 };
 ```
@@ -43,7 +43,7 @@ To start off, we can see that our only parameter is "head" which is a ListNode t
 We take in this argument and should return some other ListNode.
 
 ```javascript
-const reverseList = head => {
+const reverseList = (head) => {
   let previous = null;
 
   while (head) {
@@ -60,7 +60,7 @@ We also know we need to iterate over the entire List so we'll continue iterating
 With all of this in mind, try your own solution and scroll down to see if we came up with a similar approach.
 
 ```javascript
-const reverseList = head => {
+const reverseList = (head) => {
   let previous = null;
 
   while (head) {

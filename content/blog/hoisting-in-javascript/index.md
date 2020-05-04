@@ -47,7 +47,7 @@ function foo() {
 // Function expression
 console.log(bar); // undefined
 bar(); // Uncaught TypeError: bar is not a function
-var bar = function() {
+var bar = function () {
   console.log("BAR");
 };
 ```

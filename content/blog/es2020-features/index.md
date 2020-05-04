@@ -87,7 +87,7 @@ Import and export statements are static - the syntax is strict and only allows a
 Dynamic imports load the module and return a Promise, which allows you to be a little more flexible with its usage. For example, if you wanted to lazy load languages for i18n when a user clicks on the language in a dropdown.
 
 ```javascript
-const handleLanguageChange = async language => {
+const handleLanguageChange = async (language) => {
   // Load language json file and await Promise to complete
   const json = await import(`locales/${language}.json`);
 
