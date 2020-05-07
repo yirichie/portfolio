@@ -1,6 +1,6 @@
 ---
 title: Understanding bind(), call(), and apply()
-date: "2020-03-02"
+date: '2020-03-02'
 description: Some useful methods to add to your toolkit
 ---
 
@@ -15,7 +15,7 @@ function greet() {
   console.log(`Hello my name is ${this.name}`);
 }
 
-const person = { name: "Richie" };
+const person = { name: 'Richie' };
 const boundGreet = greet.bind(person);
 boundGreet(); // Hello my name is Richie
 ```
@@ -29,8 +29,8 @@ function greet(language) {
   console.log(`Hello my name is ${this.name} and I speak ${language}`);
 }
 
-const person = { name: "Richie" };
-const boundGreet = greet.bind(person, "English");
+const person = { name: 'Richie' };
+const boundGreet = greet.bind(person, 'English');
 boundGreet(); // Hello my name is Richie and I speak English
 ```
 
@@ -43,7 +43,7 @@ function greet() {
   console.log(`Hello my name is ${this.name}`);
 }
 
-const person = { name: "Richie" };
+const person = { name: 'Richie' };
 greet.call(person); // Hello my name is Richie
 ```
 
@@ -56,7 +56,7 @@ function greet(age) {
   console.log(`Hello my name is ${this.name} and I am ${age}`);
 }
 
-const person = { name: "Richie" };
+const person = { name: 'Richie' };
 greet.call(person, 24); // Hello my name is Richie and I am 24
 ```
 
@@ -73,8 +73,8 @@ function greet(favoriteFood, favoriteDogBreed) {
   );
 }
 
-const person = { name: "Richie" };
-greet.apply(person, ["tacos", "frenchies"]);
+const person = { name: 'Richie' };
+greet.apply(person, ['tacos', 'frenchies']);
 // Hello my name is Richie. I love tacos and frenchies.
 ```
 

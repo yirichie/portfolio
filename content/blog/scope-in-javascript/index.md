@@ -1,6 +1,6 @@
 ---
 title: Scope in JavaScript
-date: "2020-02-04"
+date: '2020-02-04'
 description: Showdown between global vs local scope
 ---
 
@@ -13,7 +13,7 @@ description: Showdown between global vs local scope
 If a variable is declared outside of a function or curly braces, it is defined in the <b>global scope</b>.
 
 ```javascript
-const name = "Richie";
+const name = 'Richie';
 
 function greeting() {
   console.log(`Hello my name is ${name}`);
@@ -26,7 +26,7 @@ In this example, <code>name</code> is defined in the <b>global scope</b> because
 Although it's commonly not recommended, if you absolutely must use a global variable then they are typically declared with capital letters like so.
 
 ```javascript
-const GLOBAL_NAME = "Richie";
+const GLOBAL_NAME = 'Richie';
 ```
 
 <h3>Local Scope</h3>
@@ -39,7 +39,7 @@ When you declare a variable within a function, it is available only within the f
 
 ```javascript
 function greeting() {
-  const name = "Richie";
+  const name = 'Richie';
   console.log(name);
 }
 greeting(); // Richie
@@ -55,8 +55,8 @@ Block scope refers to variables declared within a block (if/else blocks, switch 
 ```javascript
 function fruits() {
   if (true) {
-    var fruit1 = "apple";
-    let fruit2 = "banana";
+    var fruit1 = 'apple';
+    let fruit2 = 'banana';
   }
 
   console.log(fruit1);
@@ -69,8 +69,8 @@ fruits();
 
 function veggies() {
   if (true) {
-    var veg1 = "carrot";
-    const veg2 = "tomato";
+    var veg1 = 'carrot';
+    const veg2 = 'tomato';
   }
 
   console.log(veg1);
@@ -90,7 +90,7 @@ When a function is defined within another function, the inner function's ability
 
 ```javascript
 function outer() {
-  const name = "Richie";
+  const name = 'Richie';
   function inner() {
     const age = 24;
     console.log(`Hi my name is ${name} and I am ${age}`);

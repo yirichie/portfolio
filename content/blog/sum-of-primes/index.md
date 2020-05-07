@@ -1,6 +1,6 @@
 ---
 title: Sum of Primes
-date: "2020-03-27"
+date: '2020-03-27'
 description: Finding the sum of primes using JavaScript
 ---
 

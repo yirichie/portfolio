@@ -1,6 +1,6 @@
 ---
 title: JavaScript 3 Dots
-date: "2020-03-04"
+date: '2020-03-04'
 description: Rest parameters and spread syntax
 ---
 
@@ -45,11 +45,11 @@ No other parameters were defined in the function above so all arguments passed i
 
 ```javascript
 function description(firstName, lastName, ...rest) {
-  const fruits = rest.join(", ");
+  const fruits = rest.join(', ');
   console.log(`${firstName} ${lastName} likes ${fruits}.`);
 }
 
-description("richie", "yi", "apples", "bananas", "strawberries");
+description('richie', 'yi', 'apples', 'bananas', 'strawberries');
 // "richie yi likes apples, bananas, strawberries."
 ```
 
@@ -93,7 +93,7 @@ console.log([...arr1, 20, 25, ...arr2]);
 You can also merge objects.
 
 ```javascript
-const richie = { name: "richie", age: 25 };
+const richie = { name: 'richie', age: 25 };
 const newAge = { age: 28 };
 
 const newRichie = { ...richie, ...newAge };

@@ -1,6 +1,6 @@
 ---
 title: Reverse Linked List
-date: "2020-04-08"
+date: '2020-04-08'
 description: LeetCode problem
 ---
 

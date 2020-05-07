@@ -1,6 +1,6 @@
 ---
 title: Finding All Permutations of a String
-date: "2020-04-18"
+date: '2020-04-18'
 description: How to find all variations of a string
 ---
 
@@ -87,7 +87,7 @@ const findPermutations = (str) => {
   return arr;
 };
 
-findPermutations("abc");
+findPermutations('abc');
 // [ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]
 ```
 
@@ -102,7 +102,7 @@ with the same pattern.
 One thing you might notice, however, is that we'll end up with some extra permutations if we have a duplicate char.
 
 ```javascript
-findPermutations("aabc");
+findPermutations('aabc');
 /* [
   'aabc', 'aacb', 'abac',
   'abca', 'acab', 'acba',

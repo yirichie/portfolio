@@ -1,6 +1,6 @@
 ---
 title: Last Stone Weight
-date: "2020-04-12"
+date: '2020-04-12'
 description: LeetCode problem
 ---
 

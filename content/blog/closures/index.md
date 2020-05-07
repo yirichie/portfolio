@@ -1,6 +1,6 @@
 ---
 title: Closures in JavaScript
-date: "2020-02-11"
+date: '2020-02-11'
 description: Controlling side effects and private variables
 ---
 
@@ -10,7 +10,7 @@ When you create a function within another function, the inner function is the cl
 
 ```javascript
 function outer() {
-  const name = "Richie";
+  const name = 'Richie';
 
   return function inner() {
     console.log(name);
@@ -38,7 +38,7 @@ Here, we have a function makeTacos() that takes an argument of the number of tac
 
 ```javascript
 function prepTacos(numOfTacos) {
-  return function () {
+  return function() {
     setTimeout(() => console.log(`Made ${numOfTacos} tacos!`), 1000);
   };
 }
@@ -55,7 +55,7 @@ Now we have a function called prepTacos() that also takes a number of tacos, but
 ```javascript
 function counter() {
   let counter = 0;
-  return function () {
+  return function() {
     return counter++;
   };
 }

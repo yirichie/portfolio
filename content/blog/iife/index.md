@@ -1,6 +1,6 @@
 ---
 title: Immediately Invoked Function Expressions
-date: "2020-02-19"
+date: '2020-02-19'
 description: Or IIFE for short
 ---
 
@@ -9,15 +9,15 @@ description: Or IIFE for short
 ```javascript
 // Function declaration
 function greeting() {
-  console.log("Hello world");
+  console.log('Hello world');
 }
 ```
 
 A function declaration defines a function with a name and the specified parameters (if any).
 
 ```javascript
-const greeting = function () {
-  console.log("Hello world");
+const greeting = function() {
+  console.log('Hello world');
 };
 ```
 
@@ -32,13 +32,13 @@ Now that that's out of the way, let's go over an Immediately Invoked Function Ex
 An IIFE is similar to a regular function expression in that it is typically an anonymous function, with the difference being that it is immediately invoked.
 
 ```javascript
-(function () {
-  console.log("Hello world");
+(function() {
+  console.log('Hello world');
 })();
 // Hello world
 
-(function () {
-  console.log("Hello world");
+(function() {
+  console.log('Hello world');
 })();
 // Hello world
 ```
@@ -52,8 +52,8 @@ The first set of parentheses tells JavaScript to parse our code as a function ex
 IIFE's are typically used for data privacy.
 
 ```javascript
-(function () {
-  var superSecretApiKey = "alPastorTacos";
+(function() {
+  var superSecretApiKey = 'alPastorTacos';
 
   // do something with superSecretApiKey
 })();
@@ -68,7 +68,7 @@ You technically could create a regular function expression and achieve the same 
 
 ```javascript
 function useApiKey() {
-  var superSecretApiKey = "alPastorTacos";
+  var superSecretApiKey = 'alPastorTacos';
 
   // do something with superSecretApiKey
 }
@@ -90,7 +90,7 @@ On a side note, IIFE's can also take arguments.
 ```javascript
 var num = 50;
 
-(function (number) {
+(function(number) {
   console.log(`${number} tacos`);
 })(num);
 // 50 tacos

@@ -1,6 +1,6 @@
 ---
 title: Hoisting in JavaScript
-date: "2020-02-25"
+date: '2020-02-25'
 description: Up, up, and away!
 ---
 
@@ -13,7 +13,7 @@ Before continuing, what do you predict this will output?
 ```javascript
 console.log(word);
 
-var word = "hello";
+var word = 'hello';
 ```
 
 During the creation phase, the JavaScript interpreter will assign variable
@@ -27,7 +27,7 @@ Think of it like this:
 ```javascript
 var word;
 console.log(word); // undefined
-word = "hello";
+word = 'hello';
 ```
 
 Your code doesn't actually move, but <code class="language-text">var word</code> is initialized with an undefined value so console.log(word) does not throw a ReferenceError. Instead, it logs <i>undefined</i> and then is assigned a value on line 3.
@@ -41,14 +41,14 @@ Declarations are hoisted in JavaScript, so you are able to access the var withou
 console.log(foo); // Function: foo()
 foo(); // FOO
 function foo() {
-  console.log("FOO");
+  console.log('FOO');
 }
 
 // Function expression
 console.log(bar); // undefined
 bar(); // Uncaught TypeError: bar is not a function
-var bar = function () {
-  console.log("BAR");
+var bar = function() {
+  console.log('BAR');
 };
 ```
 
@@ -60,10 +60,10 @@ In contrast, only the variable declaration <code>var bar</code> is hoisted in th
 
 ```javascript
 console.log(word1); // ReferenceError: Cannot access 'word1' before initialization
-let word1 = "hello";
+let word1 = 'hello';
 
 console.log(word2); // ReferenceError: Cannot access 'word2' before initialization
-const word2 = "world";
+const word2 = 'world';
 ```
 
 Although all declarations are hoisted, let and const aren't initialized with undefined, so you can't access them before their declaration.

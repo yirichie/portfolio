@@ -1,6 +1,6 @@
 ---
 title: Why I Started This Blog
-date: "2020-01-02"
+date: '2020-01-02'
 description: If you can't explain it simply, you don't understand it well enough
 ---
 

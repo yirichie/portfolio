@@ -1,6 +1,6 @@
 ---
 title: Middle of the Linked List
-date: "2020-04-04"
+date: '2020-04-04'
 description: LeetCode problem
 ---
 
