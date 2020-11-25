@@ -41,7 +41,7 @@ const findPermutations = (str) => {
 };
 ```
 
-We start with an array to keep track of all the permutations, iterate over each character in the str input, and return the arr. Now let's handle any edge cases and beginning setting up for the recursion.
+We start with an array to keep track of all the permutations, iterate over each character in the str input, and return the arr. Now let's handle any edge cases and begin setting up for the recursion.
 
 ```javascript
 const findPermutations = (str) => {

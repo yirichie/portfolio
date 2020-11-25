@@ -21,15 +21,15 @@ const fizzBuzz = (n) => {
   }
 
   for (let i = 1; i <= n; i++) {
-    if (i % 3 === 0) {
+    if (i % 15 === 0) {
+      // if divisible by 3 and 5 -> return 'FizzBuzz'
+      arr.push('FizzBuzz');
+    } else if (i % 3 === 0) {
       // if divisible by 3 -> return 'Fizz'
       arr.push('Fizz');
     } else if (i % 5 === 0) {
       // if divisible by 5 -> return 'Buzz'
       arr.push('Buzz');
-    } else if (i % 15 === 0) {
-      // if divisible by 3 and 5 -> return 'FizzBuzz'
-      arr.push('FizzBuzz');
     } else {
       // otherwise, return the number
       arr.push(i);
